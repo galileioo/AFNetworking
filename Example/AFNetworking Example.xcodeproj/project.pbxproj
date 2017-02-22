@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		291BFDC61BB9E85500FFB029 /* watchOS Example Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 291BFDC51BB9E85500FFB029 /* watchOS Example Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		291BFDD51BB9E85500FFB029 /* watchOS Example.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 291BFDB91BB9E85400FFB029 /* watchOS Example.app */; };
 		291BFDEE1BB9E8C700FFB029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 291BFDED1BB9E8C700FFB029 /* main.m */; };
 		291BFDF31BB9E8C700FFB029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291BFDF21BB9E8C700FFB029 /* Assets.xcassets */; };
@@ -43,6 +42,9 @@
 		29E6F1FA1BB9E56500A4466C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6F19C1BB9DD7300A4466C /* User.m */; };
 		C2BFE0251C11870800BB258D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BFE0241C11870800BB258D /* AppDelegate.m */; };
 		C2BFE0281C11872D00BB258D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BFE0271C11872D00BB258D /* AppDelegate.m */; };
+		E4C8819A1E5D3453003ABB28 /* watchOS Example Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 291BFDC51BB9E85500FFB029 /* watchOS Example Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E4C8819C1E5D3AD7003ABB28 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C8819B1E5D3AD7003ABB28 /* AFNetworking.framework */; };
+		E4C8819D1E5D3AD7003ABB28 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4C8819B1E5D3AD7003ABB28 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				291BFDC61BB9E85500FFB029 /* watchOS Example Extension.appex in Embed App Extensions */,
+				E4C8819A1E5D3453003ABB28 /* watchOS Example Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +103,17 @@
 				291BFDD51BB9E85500FFB029 /* watchOS Example.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C8819E1E5D3AD7003ABB28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E4C8819D1E5D3AD7003ABB28 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -157,6 +170,7 @@
 		C2BFE0241C11870800BB258D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C2BFE0261C11872D00BB258D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2BFE0271C11872D00BB258D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4C8819B1E5D3AD7003ABB28 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				293206F41BD14AB50019EB9E /* AFNetworking.framework in Frameworks */,
+				E4C8819C1E5D3AD7003ABB28 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 		29E6F16A1BB9DA2E00A4466C = {
 			isa = PBXGroup;
 			children = (
+				E4C8819B1E5D3AD7003ABB28 /* AFNetworking.framework */,
 				29E6F1AB1BB9DDB600A4466C /* Assets.xcassets */,
 				29E6F1941BB9DD7300A4466C /* Classes */,
 				29E6F1771BB9DCB500A4466C /* iOS Example */,
@@ -465,6 +481,7 @@
 				29E6F1731BB9DCB500A4466C /* Resources */,
 				29E6F1F81BB9E37200A4466C /* Embed App Extensions */,
 				29E6F2321BB9E76B00A4466C /* Embed Watch Content */,
+				E4C8819E1E5D3AD7003ABB28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
